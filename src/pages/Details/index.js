@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import Rating from '@mui/material/Rating';
 import InnerImageZoom from 'react-inner-image-zoom';
+import SendIcon from '@mui/icons-material/Send';
 import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css';
 import Slider from "react-slick";
 import { useRef } from 'react';
@@ -373,7 +374,7 @@ const DetailsPage = (props) => {
                             </div>
 
                             <div className='priceSec d-flex align-items-center mb-3'>
-                                <span className='text-g priceLarge'>Rs {currentProduct.price}</span>
+                                <span className='text-g priceLarge'>Rs. {currentProduct.price}</span>
                                 <div className='ml-3 d-flex flex-column'>
                                     <span className='text-org'>{currentProduct.discount}% Off</span>
                                     <span className='text-light oldPrice'>Rs {currentProduct.oldPrice}</span>
@@ -441,15 +442,10 @@ const DetailsPage = (props) => {
                                 <div className='d-flex align-items-center'>
 
                                     {
-                                        context.windowWidth > 992 && <Button className={`btn-g btn-lg addtocartbtn ${isAlreadyAddedInCart===true && 'no-click'}`} onClick={() => addToCart(currentProduct)}><ShoppingCartOutlinedIcon />
-                                            {
-                                                isAdded === true || isAlreadyAddedInCart===true ? 'Added' : 'Add To Cart'
-                                            }
-                                        </Button>
+                                        context.windowWidth > 992 && <Button className='btn-g btn-md' href='https://www.google.com'><SendIcon/> Visit Site</Button>
 
                                     }
-                                    <Button className=' btn-lg addtocartbtn  ml-3  wishlist btn-border'><FavoriteBorderOutlinedIcon /> </Button>
-                                    <Button className=' btn-lg addtocartbtn ml-3 btn-border'><CompareArrowsIcon /></Button>
+                                    
 
                                 </div>
 
@@ -473,7 +469,7 @@ const DetailsPage = (props) => {
                                         }}
                                     >Description</Button>
                                 </li>
-                                <li className='list-inline-item'>
+                                {/* <li className='list-inline-item'>
                                     <Button className={`${activeTabs === 1 && 'active'}`}
                                         onClick={() => {
                                             setActiveTabs(1)
@@ -488,7 +484,7 @@ const DetailsPage = (props) => {
                                             showReviews()
                                         }}
                                     >Reviews (3)</Button>
-                                </li>
+                                </li> */}
 
                             </ul>
 

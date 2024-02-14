@@ -1,7 +1,9 @@
 import React, { useEffect, useState, useContext } from 'react';
 import './style.css';
 import Rating from '@mui/material/Rating';
+import Typography from '@mui/material/Typography';
 import { Button } from '@mui/material';
+import LinearProgress from '@mui/material/LinearProgress';
 import { Link } from 'react-router-dom';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
@@ -51,25 +53,7 @@ const Product = (props) => {
                                 <img src={productData.catImg+'?im=Resize=(420,420)'} className='w-100' />
                             </div>
 
-                            <div className='overlay transition'>
-                                <ul className='list list-inline mb-0'>
-                                    <li className='list-inline-item'>
-                                        <a className='cursor' tooltip="Add to Wishlist">
-                                            <FavoriteBorderOutlinedIcon />
-                                        </a>
-                                    </li>
-                                    <li className='list-inline-item'>
-                                        <a className='cursor' tooltip="Compare">
-                                            <CompareArrowsOutlinedIcon />
-                                        </a>
-                                    </li>
-                                    <li className='list-inline-item'>
-                                        <a className='cursor' tooltip="Quick View">
-                                            <RemoveRedEyeOutlinedIcon />
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+                            
                         </div>
 
                     </Link>
@@ -88,11 +72,20 @@ const Product = (props) => {
                             </div>
                         </div>
 
-                        <Button className='w-100 transition mt-3' onClick={()=>addToCart(productData)}><ShoppingCartOutlinedIcon /> 
-                            {
-                                isAdded===true ? 'Added' : 'Add'
-                            }
-                        </Button>
+                        <div>
+                            <LinearProgress color="success" className="w-full mt-2 p-1 rounded-md"
+                                variant="determinate"
+                                value={60}
+                                sx={{ borderRadius: 'inherit' }}
+                            />
+                            <Typography
+                                variant="body2"
+                                color="textSecondary"
+                                className="text-green-700"
+                            >
+                                {`${Math.round(60)}%`} people Recommend This
+                            </Typography>
+                            </div>
 
                     </div>
 

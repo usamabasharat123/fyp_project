@@ -2,6 +2,7 @@ import React, { useEffect, useContext } from 'react';
 import './nav.css';
 import { Link } from 'react-router-dom';
 import Button from '@mui/material/Button';
+import Banner1 from '../../../assets/images/Winter.jpg';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import GridViewIcon from '@mui/icons-material/GridView';
 import HeadphonesOutlinedIcon from '@mui/icons-material/HeadphonesOutlined';
@@ -23,6 +24,7 @@ const Nav = (props) => {
 
     useEffect(() => {
         setNavData(props.data);
+        console.log(props.data);
     }, [])
 
     useEffect(() => {
@@ -47,17 +49,15 @@ const Nav = (props) => {
             <div className={`nav d-flex align-items-center ${isOpenNav === true && 'click'}`}>
                 <div className='container-fluid'>
                     <div className='row position-relative'>
-                        <div className='col-sm-2 part1 d-flex align-items-center'>
-                            <Button className='bg-g text-white catTab res-hide'>
-                                <GridViewIcon /> &nbsp;Browse All Categories <KeyboardArrowDownIcon /></Button>
-                        </div>
-
+                       
                         <div className='col-sm-8 part2 position-static'>
                             <nav className={isOpenNav === true ? 'open' : ''}>
                                 <ul className='list list-inline mb-0'>
                                     <li className='list-inline-item'>
                                         <Button><Link to={'/'} onClick={props.closeNav}>Home</Link></Button>
                                     </li>
+
+                                    {/* This section is used to iterate on all the catagories and make each item of the catagory clickable and show them in navbar */}
                                     
                                     {
                                         navData.length !== 0 &&
@@ -100,10 +100,10 @@ const Nav = (props) => {
                                     }
 
                                     <li className='list-inline-item'>
-                                        <Button onClick={props.closeNav}><Link>About</Link></Button>
+                                        <Button onClick={props.closeNav}><Link to='/www.google.com'>About</Link></Button>
                                     </li>
 
-
+{/* The same above process is repraeted here with when hower on the shop all catagories with the image is displayed here*/}
                                     <li className='list-inline-item position-static'>
                                         <Button onClick={()=>setOpenMegaMenu(!openMegaMenu)}><Link>Shop <KeyboardArrowDownIcon   className={`${openMegaMenu===true &&  'rotateIcon'}`}/></Link></Button>
                                         <div className={`dropdown_menu megaMenu w-100 ${openMegaMenu===true && 'open'}`}>
@@ -134,14 +134,12 @@ const Nav = (props) => {
                                                 }
 
                                                 <div className='col'>
-                                                    <img src="https://wp.alithemes.com/html/nest/demo/assets/imgs/banner/banner-menu.png" className='w-100' />
+                                                    <img src={Banner1} className='w-100' />
                                                 </div>
                                             </div>
                                         </div>
                                     </li>
-                                    <li className='list-inline-item'>
-                                        <Button><Link>Blog</Link></Button>
-                                    </li>
+                                    
                                     {/* <li className='list-inline-item'>
                                         <Button><Link>Pages  <KeyboardArrowDownIcon /></Link>
                                         </Button>
@@ -164,7 +162,7 @@ const Nav = (props) => {
 
                                     </li> */}
                                     <li className='list-inline-item'>
-                                        <Button><Link>Contact</Link></Button>
+                                        <Button><Link>Contact Us</Link></Button>
                                     </li>
                                 </ul>
 
@@ -191,8 +189,8 @@ const Nav = (props) => {
                             <div className='phNo d-flex align-items-center ml-auto'>
                                 <span><HeadphonesOutlinedIcon /></span>
                                 <div className='info ml-3'>
-                                    <h3 className='text-g mb-0'>1900 - 888</h3>
-                                    <p className='mb-0'>24/7 Support Center</p>
+                                    <h3 className='text-g mb-0'>Smart Cart</h3>
+                                    <p className='mb-0'>Elevating Experiences</p>
                                 </div>
                             </div>
                         </div>

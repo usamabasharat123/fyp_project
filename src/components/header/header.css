@@ -5,7 +5,7 @@ header .headerSearch{width: 100%; height: 60px; border: 1px solid #bce3c9; paddi
 header .headerSearch .selectDropWrapper{width: 23%; font-size: 16px; font-weight: 500; position: relative;}
 header .headerSearch .selectDropWrapper:after{content: ''; width: 1px; height: 30px; background: rgba(0,0,0,0.2); position: absolute; top: 5px; right: 0px;}
 header .headerSearch .search{width:87%; padding-left: 30px; position: relative;}
-header .headerSearch .search input{width: 100%; height: 50px; border: 0px; outline: none !important; font-size: 18px;}
+header .headerSearch .search input{width: 100%; height: 50px; border: 0px; outline: none !important; font-size: 20px;}
 header .headerSearch .search .searchIcon{position: absolute; top: 12px; right:0px; opacity: 0.5; font-size: 30px !important;}
 
 .afterHeader{margin-top: 210px;}

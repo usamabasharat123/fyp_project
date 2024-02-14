@@ -34,5 +34,4 @@ const Banners = ()=>{
         </div>
     )
 }
-
 export default Banners;
