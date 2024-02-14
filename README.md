@@ -1,6 +1,5 @@
-# SmartCart - Intelligent E-Commerce Aggregator
+# SmartCart - Intelligent E-Commerce Shopping Experience
 
-![Smart Cart Logo](link_to_logo_image)
 
 ## Overview
 
