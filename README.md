@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# SmartCart - Intelligent E-Commerce Aggregator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Smart Cart Logo](link_to_logo_image)
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+Smart Cart is a sophisticated and intelligent e-commerce aggregator that streamlines the online shopping experience. Leveraging cutting-edge technologies such as web scraping and machine learning, it unifies product data from major e-commerce platforms, categorizes products intelligently, and provides users with a dynamic and personalized shopping interface.
 
-### `npm start`
+## Key Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Data Unification and Diversity**
+   - Collects product data from diverse e-commerce sources, including Daraz, Amazon, and Flipkart.
+   - Creates a unified and extensive product catalog for a wide array of products.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. **Smart Categorization with Machine Learning**
+   - Implements Naive Bayes classification to intelligently categorize products.
+   - Adapts and learns over time, enhancing the accuracy of categorization.
 
-### `npm test`
+3. **Dynamic Flask Web Application**
+   - User-centric web application built with Flask.
+   - Intuitive interface for seamless product exploration and intelligent recommendations.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. **Scheduled Updates for Timely Information**
+   - Regularly scrapes and updates product information to provide real-time and accurate data.
+   - Ensures users are presented with the latest and most relevant products.
 
-### `npm run build`
+5. **Heroku Deployment for Accessibility**
+   - Deployed on the Heroku cloud platform for accessibility and scalability.
+   - Provides a seamless experience for users, regardless of their geographical location.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+6. **Personalized User Accounts**
+   - User account functionality for a personalized experience.
+   - Features include saving preferences, tracking search history, and receiving tailored recommendations.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+7. **Future-Ready Innovations**
+   - Envisions incorporating advanced natural language processing for more nuanced searches.
+   - Plans to expand coverage to include an even broader spectrum of product categories.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+### Prerequisites
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Python 3.x
+- Dependencies listed in `requirements.txt
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/usamabasharat123/fyp_project.git
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-## Learn More
+3. Run the Flask application:
+   ```bash
+   python app.py
+   ```
+   
+## Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Search for products, explore categories, and enjoy a personalized shopping experience.
+- Create a user account for additional features such as saved preferences and recommendations.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contributing
 
-### Code Splitting
+Contributions are welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Acknowledgments
 
-### Analyzing the Bundle Size
+- Thanks to the open-source community for providing invaluable tools and resources.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Happy Shopping with Smart Cart! 🛒🌐
